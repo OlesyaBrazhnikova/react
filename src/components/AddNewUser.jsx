@@ -7,6 +7,7 @@ function AddNewUser({addNewUser}) {
 		gender: '',
 		balance: '',
 	})
+	
 
 	const createNewUser = (event) => {
 		event.preventDefault();
