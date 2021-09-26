@@ -7,13 +7,11 @@ function AddNewUser({addNewUser}) {
 		gender: '',
 		balance: '',
 	})
-	
 
 	const createNewUser = (event) => {
 		event.preventDefault();
 		addNewUser({
 			...newUser,
-			id: 2,
 		})
 	}
 	return (
@@ -31,7 +29,7 @@ function AddNewUser({addNewUser}) {
 				<input value={newUser.balance} 
 						onChange={(event)=> setNewUser({...newUser, balance: event.target.value})}
 						placeholder="Enter amout of money"/>
-				<button type="submit" onClick={createNewUser}>Add user</button>
+				<button type="submit" onClick={addNewUser}>Add user</button>
 			</form>
 		</div>
 	)
