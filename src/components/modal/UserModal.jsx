@@ -9,7 +9,7 @@ function UserModal({children, visible, setVisible}) {
 	}
 
 	return (
-		<div className={containerClass.join(' ')}>
+		<div className={containerClass.join(' ')} onClick={() => setVisible(false)}>
 			<div className={classes.userModuleContent}>{children}</div>
 		</div>
 	);

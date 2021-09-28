@@ -6,6 +6,7 @@ import './App.css';
 import Header from './components/header/Header';
 import AgeSelect from './components/select/AgeSelect';
 import UserModal from './components/modal/UserModal';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 	const [users, setUsers] = useState(userData);
@@ -39,7 +40,7 @@ function App() {
 				onSortChange={setSort}
 			/>
 			<AddNewUser addNewUser={addNewUser}/>
-			<UserList users={filteredTasks}/>
+			<UserList users={filteredTasks} setIsActive={setIsActive}/>
 			<UserModal
 				visible={isActive}
 				setVisible={setIsActive}
