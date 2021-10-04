@@ -1,14 +1,39 @@
-.userList {
-	display: flex;
-	flex-wrap: wrap;
+.App {
+  text-align: center;
 }
 
-.userItem {
-	width: 25%;
-	margin: 5px;
-	padding: 10px 5px;
-	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
-	background-color: lightcyan;
+.Timers {
+	width: 180px;
+	margin: 0 auto;
+	text-align: center;
+  }
+  
+#btn_wrap {
+margin-bottom: 20px;
+}
+#btn_wrap span {
+font-size: 36px;
+}
+
+#btns button:nth-child(2) {
+margin-left: 8px;
+}
+
+button {
+font-size: 16px;
+background-color: rgb(217, 60, 35);
+color: #fff;
+border-radius: 8px;
+border: none;
+padding: 6px 12px;
+cursor: pointer;
+}
+button:hover {
+background-color: rgb(173, 47, 28);
+}
+button:active {
+background-color: rgb(130, 35, 21);
+}
+button:focus {
+outline: 0;
 }

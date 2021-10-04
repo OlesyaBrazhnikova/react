@@ -1,21 +1,10 @@
-import React, { useState } from 'react';
-import UserList from './components/UserList';
-import AddNewUser from './components/AddNewUser';
-import { userData } from './userData';
+import React from 'react';
 import './App.css';
+import Timer from './components/Timer'
 
 function App() {
-	const [users, setUsers] = useState(userData);
-
-	const addNewUser = (newUser) => {
-		setUsers([...users, newUser]);
-	}
-
 	return (
-		<div className="App">
-			<AddNewUser addNewUser={addNewUser}/>
-			<UserList users={users}/>
-		</div>
+		<Timer/>
 	);
 }
 
