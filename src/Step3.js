@@ -18,14 +18,14 @@ export const Step3 = () => {
   });
 
   const onSubmit = (data) => {
-    history.push("./result");
+    history.push("./Step4");
     setValues(data);
   };
 
   return (
     <MainContainer>
       <Typography component="h2" variant="h5">
-        🦄 Step 3
+        Step 3
       </Typography>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <FileInput name="files" control={control} />

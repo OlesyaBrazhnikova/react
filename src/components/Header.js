@@ -8,8 +8,8 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Permanent Marker",
     textAlign: "center",
     fontSize: "40px",
-    color: "deeppink",
-    textShadow: "1px 1px darkmagenta",
+    color: "lightseagreen",
+    textShadow: "2px 2px royalblue",
   },
 }));
 
@@ -18,7 +18,7 @@ export const Header = () => {
 
   return (
     <Typography className={styles.root} component="h1" variant="h5">
-      The Ultimate Form Challenge
+      Call the form step by step
     </Typography>
   );
 };
