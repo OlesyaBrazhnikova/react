@@ -1,22 +1,7 @@
-import React, { useState } from 'react';
-import UserList from './components/UserList';
-import AddNewUser from './components/AddNewUser';
-import { userData } from './userData';
-import './App.css';
+import Game from './components/Game';
 
 function App() {
-	const [users, setUsers] = useState(userData);
-
-	const addNewUser = (newUser) => {
-		setUsers([...users, newUser]);
-	}
-
-	return (
-		<div className="App">
-			<AddNewUser addNewUser={addNewUser}/>
-			<UserList users={users}/>
-		</div>
-	);
+  return <Game />;
 }
 
 export default App;
